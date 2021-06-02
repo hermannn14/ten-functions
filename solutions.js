@@ -22,7 +22,7 @@
  */
 
 function  isTrue(value) {
-    return value == true;
+    return value === true;
 }
 
 function isFalse(value) {
@@ -30,34 +30,34 @@ function isFalse(value) {
 }
 
 function not(value) {
-    return value !== true, false;
+    return !value;
 }
 
 function addOne(value) {
-    return value + 1;
+    return Number(value) + 1;
 }
 
 function isEven(value) {
-    return value === isEven;
+    return (parseFloat(value % 2) === 0);
 }
 
-function isIdentical(value) {
-    return value === isIdentical;
+function isIdentical(valueOne,valueTwo) {
+    return valueOne === valueTwo;
 }
 
-function isEqual(value) {
-    return value;
+function isEqual(valueOne, valueTwo) {
+    return (valueOne == valueTwo);
 }
 
-function or(value) {
-    return value || value ;
+function or(valueOne, valueTwo) {
+    return valueOne || valueTwo ;
 }
 
-function and(value) {
-    return value && value
+function and(valueOne, valueTwo) {
+    return valueOne && valueTwo;
 }
 
-function concat(value1, value2) {
-    return (value1 + value2);
-    return (value1value2);
+function concat(valueOne, valueTwo) {
+    return (valueOne.toString() + valueTwo.toString());
+
 }
